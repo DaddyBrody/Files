@@ -9,16 +9,16 @@ if not game:IsLoaded() then
             ["Prediction"] = 0.18,
             ["AutoPrediction"] = true,
             ["AimPart"] = "UpperTorso",
-            ["ClosestBodyPart"] = true,
+            ["ClosestBodyPart"] = false,
             ["AntiGroundShots"] = true,
             ["HitChance"] = 100,
             ["WallCheck"] = true,
             ["UnlockOnDeath"] = true,
-            ["AntiAimViewer"] = true,
+            ["AntiAimViewer"] = false,
         },
         FOV = {
             ["Visible"] = false,
-            ["Radius"] = 15
+            ["Radius"] = 100
         },
         Tracer = {
             ["Key"] = "C",
