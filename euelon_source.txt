@@ -6,7 +6,7 @@ getgenv().Settings = {
         ToggleKey = true,
  
         UseKeyBoardKey = true,
-        KeyBoardKey = Enum.KeyCode.C, -- https://create.roblox.com/docs/reference/engine/enums/KeyCode
+        KeyBoardKey = Enum.KeyCode.Q, -- https://create.roblox.com/docs/reference/engine/enums/KeyCode
  
         UseMouseKey = false,
         ThirdPerson = true,
@@ -14,7 +14,7 @@ getgenv().Settings = {
  
         AutoPingSets = true,
  
-        UseCircleRadius = false,
+        UseCircleRadius = true,
         DisableOutSideCircle = false,
  
         UseShake = true,
@@ -29,11 +29,12 @@ getgenv().Settings = {
     },
     Horizontal = {
         PredictMovement = true,
-        PredictionVelocity = 0.17221418
+        PredictionVelocity = 0.1423
     },
     Smooth = {
-        Smoothness = true,
-        SmoothnessAmount = 0,
+        Smoothness = false,
+
+        SmoothnessAmount = 1,
         SmoothMethod = Enum.EasingStyle.Circular,
         SmoothMethodV2 = Enum.EasingDirection.InOut
     },
@@ -46,7 +47,7 @@ getgenv().Settings = {
     Resolver = {
         UnderGround = false,
         UseUnderGroundKeybind = true,
-        UnderGroundKey = Enum.KeyCode.Z,
+        UnderGroundKey = Enum.KeyCode.C,
         DetectDesync = true,
         Detection = 75,
  
@@ -56,7 +57,7 @@ getgenv().Settings = {
     },
     Visual = {
         Fov = false,
-        FovTransparency = 1,
+        FovTransparency = 0,
         FovThickness = 1,
         FovColor = Color3.fromRGB(255, 185, 0),
         FovRadius = 360
