@@ -59,7 +59,7 @@ getgenv().Evolution = {
           ["Value"] = 0.058, -- // Smoothness Value
       },
       ["Shake"] = {
-          ["Enabled"] = true, -- // Will Shake your camera randomly when targeting
+          ["Enabled"] = false, -- // Will Shake your camera randomly when targeting
           ["X"] = 5, -- // Max X Position
           ["Y"] = 5, -- // Max Y Position
           ["Z"] = 7, -- // Max Z Position
