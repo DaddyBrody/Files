@@ -247,7 +247,7 @@ getgenv().Evolution = {
   },
   ["Chat Commands"] = {
       ["Enabled"] = true,
-      ["Prefix"] = ".",
+      ["Prefix"] = "$",
       ["Commands"] = { -- // CANNOT HAVE SPACES!!!
           ["Prediction"] = "pred", -- // ex; $pred 0.115
           ["ToggleFOV"] = "draw", -- // ex; $draw true (you can also do "on" or "yes" and to disable you do "off" or "yes" or "false")
