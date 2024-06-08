@@ -59,10 +59,10 @@ getgenv().Evolution = {
           ["Value"] = 0.058, -- // Smoothness Value
       },
       ["Shake"] = {
-          ["Enabled"] = false, -- // Will Shake your camera randomly when targeting
+          ["Enabled"] = true, -- // Will Shake your camera randomly when targeting
           ["X"] = 5, -- // Max X Position
           ["Y"] = 5, -- // Max Y Position
-          ["Z"] = 5, -- // Max Z Position
+          ["Z"] = 7, -- // Max Z Position
       },
   },
   ["Global"] = {
@@ -161,12 +161,12 @@ getgenv().Evolution = {
       }
   },
   ["Hit Sound"] = {
-      ["Enabled"] = true, -- // Sound for when you hit a player
+      ["Enabled"] = false, -- // Sound for when you hit a player
       ["Hit Sound"] = "Minecraft", -- // Minecraft, Bameware, Bubble, Pick, Pop, Rust, Sans, Fart, Big, Vine, Bruh, Skeet, Neverlose, Fatality, Bonk
-      ["Volume"] = 100,
+      ["Volume"] = 0,
   },
   ["Hit Logs"] = {
-      ["Enabled"] = false, -- // Logs when you hit a player
+      ["Enabled"] = true, -- // Logs when you hit a player
   },
   ["Macro"] = {
       ["Enabled"] = false, -- // Lua based macro
