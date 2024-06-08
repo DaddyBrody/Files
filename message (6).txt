@@ -26,13 +26,13 @@ getgenv().Evolution = {
       ["Mode"] = "FOV", -- // Select mode to select target (FOV, Target )
       ["Target Mode Bind"] = "P", -- // Keybind for Target mode
       ["Notify"] = true, -- // Sends notifcation when targeting someone
-      ["Prediction"] = 0.133, -- // Prediction Value
+      ["Prediction"] = 0.1423, -- // Prediction Value
       ["Hit Chance"] = 100, -- // Hit chance (1-100)
       ["Target Part"] = "Head", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
       ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
       ["Nearest Part To Cursor"] = false, -- // Sets target part to the nearest body part to your cursor
       ["Closest Point"] = false, -- // Gets the closest point on the target part (not working rn)
-      ["Dot"] = true, -- // Visual 
+      ["Dot"] = false, -- // Visual 
       ["Line"] = false, -- // Visual 
       ["Shake"] = {
           ["Enabled"] = false, -- // Will Randomly Offset hit point
@@ -47,7 +47,7 @@ getgenv().Evolution = {
       ["Target Mode Bind"] = "Q", -- // Keybind for Target modes
       ["Easing Style"] = "Exponential", -- // https://create.roblox.com/docs/reference/engine/enums/EasingStyle
       ["Notify"] = true, -- // Sends notifcation when targeting someone
-      ["Prediction"] = 0.1423, -- // Prediction Value
+      ["Prediction"] = 0.1455, -- // Prediction Value
       ["Target Part"] = "Head", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
       ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
       ["Nearest Part To Cursor"] = false,  -- // Sets target part to the nearest body part to your cursor
@@ -146,7 +146,7 @@ getgenv().Evolution = {
       ["Cam Lock"] = {
           ["Visible"] = false, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-          ["Size"] = 100, -- // Size of the circle
+          ["Size"] = 30, -- // Size of the circle
           ["Thickness"] = 1, -- // Thickness of the circle
           ["Transparency"] = 1, -- // Transparency of the circle 0.1 - 1
           ["Color"] = Color3.fromRGB(255,255,255) -- // Circle Color
@@ -156,7 +156,7 @@ getgenv().Evolution = {
       ["Enabled"] = true, -- // Will adjust your prediction if target is in the air
       ["Jump Offset"] = -1.6, -- // Jump Offset
       ["Cam Lock Smoothness"] = {
-          ["Enabled"] = true, -- // Will adjust your camlock smoothness if target is in the air
+          ["Enabled"] = false, -- // Will adjust your camlock smoothness if target is in the air
           ["New Smoothness"] = 0.58, -- // Smoothness value
       }
   },
@@ -217,7 +217,7 @@ getgenv().Evolution = {
       }
   },
   ["Extra"] = {
-      ["Disable Seats"] = true, -- // Will disable all the seats that break your macro
+      ["Disable Seats"] = false, -- // Will disable all the seats that break your macro
       ["Low Graphics"] = false, -- // Will give you low graphics
       ["Mute Boomboxes"] = false, -- // Will mute everyones boombox (FE)
   },
