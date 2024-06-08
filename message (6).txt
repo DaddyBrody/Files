@@ -6,7 +6,7 @@ getgenv().Evolution = {
           ["Key"] = "", -- // Enter your Evolution Key
       },
       ["Internal"] = {
-          ["Enabled"] = true, -- // Shows internal ui for evolution
+          ["Enabled"] = false, -- // Shows internal ui for evolution
           ["Auto Show"] = false, -- // Will show the ui when you execute
           ["Bind"] = "V", -- // Default keybind to toggle ui
       },
@@ -25,7 +25,7 @@ getgenv().Evolution = {
       ["Enabled"] = false, -- // Mouse Redirection
       ["Mode"] = "FOV", -- // Select mode to select target (FOV, Target )
       ["Target Mode Bind"] = "P", -- // Keybind for Target mode
-      ["Notify"] = true, -- // Sends notifcation when targeting someone
+      ["Notify"] = false, -- // Sends notifcation when targeting someone
       ["Prediction"] = 0.1423, -- // Prediction Value
       ["Hit Chance"] = 100, -- // Hit chance (1-100)
       ["Target Part"] = "Head", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
@@ -59,10 +59,10 @@ getgenv().Evolution = {
           ["Value"] = 0.058, -- // Smoothness Value
       },
       ["Shake"] = {
-          ["Enabled"] = false, -- // Will Shake your camera randomly when targeting
-          ["X"] = 5, -- // Max X Position
-          ["Y"] = 5, -- // Max Y Position
-          ["Z"] = 7, -- // Max Z Position
+          ["Enabled"] = true, -- // Will Shake your camera randomly when targeting
+          ["X"] = 1, -- // Max X Position
+          ["Y"] = 2, -- // Max Y Position
+          ["Z"] = 2, -- // Max Z Position
       },
   },
   ["Global"] = {
@@ -156,7 +156,7 @@ getgenv().Evolution = {
       ["Enabled"] = true, -- // Will adjust your prediction if target is in the air
       ["Jump Offset"] = -1.8, -- // Jump Offset
       ["Cam Lock Smoothness"] = {
-          ["Enabled"] = true, -- // Will adjust your camlock smoothness if target is in the air
+          ["Enabled"] = false, -- // Will adjust your camlock smoothness if target is in the air
           ["New Smoothness"] = 0.58, -- // Smoothness value
       }
   },
