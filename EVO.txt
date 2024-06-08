@@ -130,8 +130,8 @@ getgenv().Evolution = {
   },
   ["Resolver"] = {
       ["Enabled"] = false, -- // Resolve Anti Locks and Desyncs
-      ["Method"] = "Delta", -- // Delta, Move Direction, No Prediction, Recalculate
-      ["Keybind Enabled"] = false, -- // Will toggle resolver when you press key
+      ["Method"] = "Move Direction", -- // Delta, Move Direction, No Prediction, Recalculate
+      ["Keybind Enabled"] = true, -- // Will toggle resolver when you press key
       ["Keybind"] = "Z", -- // Keybind to toggle resolver
   },
   ["FOV"] = { -- // FOV Circle Settings
