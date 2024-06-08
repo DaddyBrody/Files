@@ -15,7 +15,7 @@ getgenv().Evolution = {
           ["FPS"] = 999, -- // Maximum FPS
       },
       ["Intro"] = true, -- // Will show a short intro
-      ["Stats"] = false, -- // Shows debug stats 
+      ["Stats"] = true, -- // Shows debug stats 
       ["Auto Join Discord"] = false, -- // Will Join Discord
       ["Allow Notifications"] = true, -- // Toggles all notifications
       ["Notifcation Type"] = "xaxa", -- // Akali, Roblox, xaxa
@@ -247,7 +247,7 @@ getgenv().Evolution = {
   },
   ["Chat Commands"] = {
       ["Enabled"] = true,
-      ["Prefix"] = "$",
+      ["Prefix"] = ".",
       ["Commands"] = { -- // CANNOT HAVE SPACES!!!
           ["Prediction"] = "pred", -- // ex; $pred 0.115
           ["ToggleFOV"] = "draw", -- // ex; $draw true (you can also do "on" or "yes" and to disable you do "off" or "yes" or "false")
