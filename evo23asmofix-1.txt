@@ -55,14 +55,14 @@ getgenv().Evolution = {
       ["Dot"] = false, -- // Visual 
       ["Line"] = false, -- // Visual 
       ["Smoothness"] = {
-          ["Enabled"] = true, -- // Prevents snapping when targeting
+          ["Enabled"] = false, -- // Prevents snapping when targeting
           ["Value"] = 0.058, -- // Smoothness Value
       },
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Shake your camera randomly when targeting
-          ["X"] = 6, -- // Max X Position
-          ["Y"] = 3, -- // Max Y Position
-          ["Z"] = 12, -- // Max Z Position
+          ["X"] = 8, -- // Max X Position
+          ["Y"] = 9, -- // Max Y Position
+          ["Z"] = 13, -- // Max Z Position
       },
   },
   ["Global"] = {
