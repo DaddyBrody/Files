@@ -60,9 +60,9 @@ getgenv().Evolution = {
       },
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Shake your camera randomly when targeting
-          ["X"] = 8, -- // Max X Position
-          ["Y"] = 9, -- // Max Y Position
-          ["Z"] = 13, -- // Max Z Position
+          ["X"] = 4, -- // Max X Position
+          ["Y"] = 6, -- // Max Y Position
+          ["Z"] = 8, -- // Max Z Position
       },
   },
   ["Global"] = {
@@ -93,7 +93,7 @@ getgenv().Evolution = {
       },
       ["Anti Ground Shots"] = true, -- // Will prevent you from shooting the ground
       ["Unlock On KO"] = false, -- // Unlocks when target dies
-      ["Unlock Outside FOV"] = false, -- // Will unlock when the target leaves your fov
+      ["Unlock Outside FOV"] = true, -- // Will unlock when the target leaves your fov
       ["Unlock Behind Wall"] = false, -- // Will unlock when the target goes behind a wall
   },
   ["Checks"] = {
@@ -146,9 +146,9 @@ getgenv().Evolution = {
       ["Cam Lock"] = {
           ["Visible"] = false, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-          ["Size"] = 200, -- // Size of the circle
-          ["Thickness"] = 1, -- // Thickness of the circle
-          ["Transparency"] = 1, -- // Transparency of the circle 0.1 - 1
+          ["Size"] = 250, -- // Size of the circle
+          ["Thickness"] = 0.5, -- // Thickness of the circle
+          ["Transparency"] = 0.3, -- // Transparency of the circle 0.1 - 1
           ["Color"] = Color3.fromRGB(255,255,255) -- // Circle Color
       },
   },
