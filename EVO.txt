@@ -119,8 +119,8 @@ getgenv().Evolution = {
               ]]
           }
       },
-      ["Visible Check"] = true, -- // Will check if target is behind a wall
-      ["K.O Check"] = true, -- // Will check if target is knocked or grabbed
+      ["Visible Check"] = false, -- // Will check if target is behind a wall
+      ["K.O Check"] = false, -- // Will check if target is knocked or grabbed
       ["Crew Check"] = false, -- // Will check if target is in your crew
       ["Friend Check"] = false, -- // Will check if target is your friend if not will not lock
       ["Distance"] = { -- // Not lock onto people if they are too far away
@@ -146,7 +146,7 @@ getgenv().Evolution = {
       ["Cam Lock"] = {
           ["Visible"] = false, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-          ["Size"] = 30, -- // Size of the circle
+          ["Size"] = 100, -- // Size of the circle
           ["Thickness"] = 1, -- // Thickness of the circle
           ["Transparency"] = 1, -- // Transparency of the circle 0.1 - 1
           ["Color"] = Color3.fromRGB(255,255,255) -- // Circle Color
