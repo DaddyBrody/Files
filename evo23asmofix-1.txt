@@ -68,7 +68,7 @@ getgenv().Evolution = {
   ["Global"] = {
       ["Auto Prediction"] = {
           ["Enabled"] = true, -- // Will automatically set your prediction based on your ping
-          ["Version"] = "V2", -- // Default, Old, V2, Custom
+          ["Version"] = "Default", -- // Default, Old, V2, Custom
           ["Custom Settings"] = { -- // Custom Values
               ["Ping20"]  = 0.12746444,
               ["Ping30"]  = 0.12746444,
@@ -906,7 +906,7 @@ GetPrediction = function()
       local PingValue = Value:split(" ")
       local PingNumber = tonumber(PingValue[1])
       if string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "default" then 
-          return tonumber(PingNumber / 225 * 0.1 + 0.1)
+          return tonumber(PingNumber / 300 * 0.1 + 0.12)
       elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "old" then 
           if PingNumber < 130 then
               return tonumber(PingNumber / 1000 + 0.037)
