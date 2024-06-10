@@ -93,7 +93,7 @@ getgenv().Evolution = {
       },
       ["Anti Ground Shots"] = true, -- // Will prevent you from shooting the ground
       ["Unlock On KO"] = true, -- // Unlocks when target dies
-      ["Unlock Outside FOV"] = true, -- // Will unlock when the target leaves your fov
+      ["Unlock Outside FOV"] = false, -- // Will unlock when the target leaves your fov
       ["Unlock Behind Wall"] = false, -- // Will unlock when the target goes behind a wall
   },
   ["Checks"] = {
