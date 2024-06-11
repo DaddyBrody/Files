@@ -129,14 +129,14 @@ getgenv().Evolution = {
       }
   },
   ["Resolver"] = {
-      ["Enabled"] = false, -- // Resolve Anti Locks and Desyncs
+      ["Enabled"] = true, -- // Resolve Anti Locks and Desyncs
       ["Method"] = "Move Direction", -- // Delta, Move Direction, No Prediction, Recalculate
       ["Keybind Enabled"] = true, -- // Will toggle resolver when you press key
       ["Keybind"] = "Z", -- // Keybind to toggle resolver
   },
   ["FOV"] = { -- // FOV Circle Settings
       ["Silent Aim"] = {
-          ["Visible"] = true, -- // Will toggle if you can see the circle
+          ["Visible"] = false, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
           ["Size"] = 35, -- // Size of the circle
           ["Thickness"] = 0.2, -- // Thickness of the circle
