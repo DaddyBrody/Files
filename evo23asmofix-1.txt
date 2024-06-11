@@ -22,7 +22,7 @@ getgenv().Evolution = {
       ["Notifcation Duration"] = 3, -- // How long notifcations will show
   },
   ["Silent Aim"] = {
-      ["Enabled"] = false, -- // Mouse Redirection
+      ["Enabled"] = true, -- // Mouse Redirection
       ["Mode"] = "FOV", -- // Select mode to select target (FOV, Target )
       ["Target Mode Bind"] = "L", -- // Keybind for Target mode
       ["Notify"] = false, -- // Sends notifcation when targeting someone
@@ -36,9 +36,9 @@ getgenv().Evolution = {
       ["Line"] = false, -- // Visual 
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
-          ["X"] = 5, -- // Max X Position
-          ["Y"] = 5, -- // Max Y Position
-          ["Z"] = 5, -- // Max Z Position
+          ["X"] = 9, -- // Max X Position
+          ["Y"] = 6, -- // Max Y Position
+          ["Z"] = 12, -- // Max Z Position
       },
   },
   ["Cam Lock"] = {
@@ -136,12 +136,12 @@ getgenv().Evolution = {
   },
   ["FOV"] = { -- // FOV Circle Settings
       ["Silent Aim"] = {
-          ["Visible"] = false, -- // Will toggle if you can see the circle
+          ["Visible"] = true, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-          ["Size"] = 15, -- // Size of the circle
-          ["Thickness"] = 1, -- // Thickness of the circle
-          ["Transparency"] = 1, -- // Transparency of the circle 0.1 - 1
-          ["Color"] = Color3.fromRGB(255,255,255) -- // Circle Color
+          ["Size"] = 60, -- // Size of the circle
+          ["Thickness"] = 0.2, -- // Thickness of the circle
+          ["Transparency"] = 0.3, -- // Transparency of the circle 0.1 - 1
+          ["Color"] = Color3.fromRGB(2,23,240) -- // Circle Color
       },
       ["Cam Lock"] = {
           ["Visible"] = false, -- // Will toggle if you can see the circle
