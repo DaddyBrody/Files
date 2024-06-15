@@ -157,7 +157,7 @@ getgenv().Evolution = {
       ["Jump Offset"] = -1.6, -- // Jump Offset
       ["Cam Lock Smoothness"] = {
           ["Enabled"] = true, -- // Will adjust your camlock smoothness if target is in the air
-          ["New Smoothness"] = 0.58, -- // Smoothness value
+          ["New Smoothness"] = 0.977, -- // Smoothness value
       }
   },
   ["Hit Sound"] = {
