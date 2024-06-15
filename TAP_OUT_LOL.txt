@@ -60,8 +60,8 @@ getgenv().Evolution = {
       },
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Shake your camera randomly when targeting
-          ["X"] = 3, -- // Max X Position
-          ["Y"] = 2, -- // Max Y Position
+          ["X"] = 8, -- // Max X Position
+          ["Y"] = 7, -- // Max Y Position
           ["Z"] = 5, -- // Max Z Position
       },
   },
