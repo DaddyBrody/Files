@@ -37,7 +37,7 @@ getgenv().Evolution = {
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
           ["X"] = 9, -- // Max X Position
-          ["Y"] = 6, -- // Max Y Position
+          ["Y"] = 9, -- // Max Y Position
           ["Z"] = 12, -- // Max Z Position
       },
   },
@@ -56,7 +56,7 @@ getgenv().Evolution = {
       ["Line"] = false, -- // Visual 
       ["Smoothness"] = {
           ["Enabled"] = true, -- // Prevents snapping when targeting
-          ["Value"] = 0.5883, -- // Smoothness Value
+          ["Value"] = 0.59883, -- // Smoothness Value
       },
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Shake your camera randomly when targeting
