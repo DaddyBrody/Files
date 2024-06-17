@@ -11,7 +11,7 @@ getgenv().Evolution = {
           ["Bind"] = "V", -- // Default keybind to toggle ui
       },
       ["FPS Unlocker"] = { -- // Unlocks your fps (BROKEN ON ELECTRON)
-          ["Enabled"] = false, -- // Will unlock your FPS
+          ["Enabled"] = true, -- // Will unlock your FPS
           ["FPS"] = 999, -- // Maximum FPS
       },
       ["Intro"] = true, -- // Will show a short intro
@@ -28,7 +28,7 @@ getgenv().Evolution = {
       ["Notify"] = false, -- // Sends notifcation when targeting someone
       ["Prediction"] = 0.174, -- // Prediction Value
       ["Hit Chance"] = 100, -- // Hit chance (1-100)
-      ["Target Part"] = "Head", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
+      ["Target Part"] = "UpperTorso", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
       ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
       ["Nearest Part To Cursor"] = false, -- // Sets target part to the nearest body part to your cursor
       ["Closest Point"] = false, -- // Gets the closest point on the target part (not working rn)
@@ -37,8 +37,8 @@ getgenv().Evolution = {
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
           ["X"] = 9, -- // Max X Position
-          ["Y"] = 4, -- // Max Y Position
-          ["Z"] = 12, -- // Max Z Position
+          ["Y"] = 12, -- // Max Y Position
+          ["Z"] = 8, -- // Max Z Position
       },
   },
   ["Cam Lock"] = {
@@ -154,7 +154,7 @@ getgenv().Evolution = {
   },
   ["Airshot"] = {
       ["Enabled"] = true, -- // Will adjust your prediction if target is in the air
-      ["Jump Offset"] = -1.6, -- // Jump Offset
+      ["Jump Offset"] = -1.8, -- // Jump Offset
       ["Cam Lock Smoothness"] = {
           ["Enabled"] = true, -- // Will adjust your camlock smoothness if target is in the air
           ["New Smoothness"] = 0.758, -- // Smoothness value
@@ -906,7 +906,7 @@ GetPrediction = function()
       local PingValue = Value:split(" ")
       local PingNumber = tonumber(PingValue[1])
       if string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "default" then 
-          return tonumber(PingNumber / 400 * 0.1 + 0.14327)
+          return tonumber(PingNumber / 400 * 0.1 + 0.14467)
       elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "old" then 
           if PingNumber < 130 then
               return tonumber(PingNumber / 1000 + 0.037)
