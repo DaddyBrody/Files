@@ -37,7 +37,7 @@ getgenv().Evolution = {
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
           ["X"] = 9, -- // Max X Position
-          ["Y"] = 9, -- // Max Y Position
+          ["Y"] = 4, -- // Max Y Position
           ["Z"] = 12, -- // Max Z Position
       },
   },
@@ -157,7 +157,7 @@ getgenv().Evolution = {
       ["Jump Offset"] = -1.6, -- // Jump Offset
       ["Cam Lock Smoothness"] = {
           ["Enabled"] = true, -- // Will adjust your camlock smoothness if target is in the air
-          ["New Smoothness"] = 0.58, -- // Smoothness value
+          ["New Smoothness"] = 0.758, -- // Smoothness value
       }
   },
   ["Hit Sound"] = {
@@ -906,7 +906,7 @@ GetPrediction = function()
       local PingValue = Value:split(" ")
       local PingNumber = tonumber(PingValue[1])
       if string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "default" then 
-          return tonumber(PingNumber / 300 * 0.1 + 0.13396)
+          return tonumber(PingNumber / 400 * 0.1 + 0.14327)
       elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "old" then 
           if PingNumber < 130 then
               return tonumber(PingNumber / 1000 + 0.037)
