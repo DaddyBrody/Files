@@ -36,8 +36,8 @@ getgenv().Evolution = {
       ["Line"] = false, -- // Visual 
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
-          ["X"] = 6, -- // Max X Position
-          ["Y"] = 9, -- // Max Y Position
+          ["X"] = 10, -- // Max X Position
+          ["Y"] = 6, -- // Max Y Position
           ["Z"] = 6, -- // Max Z Position
       },
   },
