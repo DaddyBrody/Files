@@ -36,9 +36,9 @@ getgenv().Evolution = {
       ["Line"] = false, -- // Visual 
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
-          ["X"] = 9, -- // Max X Position
-          ["Y"] = 12, -- // Max Y Position
-          ["Z"] = 8, -- // Max Z Position
+          ["X"] = 6, -- // Max X Position
+          ["Y"] = 9, -- // Max Y Position
+          ["Z"] = 6, -- // Max Z Position
       },
   },
   ["Cam Lock"] = {
@@ -161,9 +161,9 @@ getgenv().Evolution = {
       }
   },
   ["Hit Sound"] = {
-      ["Enabled"] = false, -- // Sound for when you hit a player
-      ["Hit Sound"] = "Minecraft", -- // Minecraft, Bameware, Bubble, Pick, Pop, Rust, Sans, Fart, Big, Vine, Bruh, Skeet, Neverlose, Fatality, Bonk
-      ["Volume"] = 1,
+      ["Enabled"] = true, -- // Sound for when you hit a player
+      ["Hit Sound"] = "Neverlose", -- // Minecraft, Bameware, Bubble, Pick, Pop, Rust, Sans, Fart, Big, Vine, Bruh, Skeet, Neverlose, Fatality, Bonk
+      ["Volume"] = 100,
   },
   ["Hit Logs"] = {
       ["Enabled"] = false, -- // Logs when you hit a player
