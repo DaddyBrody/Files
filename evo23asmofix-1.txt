@@ -37,8 +37,8 @@ getgenv().Evolution = {
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
           ["X"] = 10, -- // Max X Position
-          ["Y"] = 6, -- // Max Y Position
-          ["Z"] = 6, -- // Max Z Position
+          ["Y"] = 3, -- // Max Y Position
+          ["Z"] = 3, -- // Max Z Position
       },
   },
   ["Cam Lock"] = {
@@ -154,16 +154,16 @@ getgenv().Evolution = {
   },
   ["Airshot"] = {
       ["Enabled"] = true, -- // Will adjust your prediction if target is in the air
-      ["Jump Offset"] = -1.8, -- // Jump Offset
+      ["Jump Offset"] = -1.2, -- // Jump Offset
       ["Cam Lock Smoothness"] = {
           ["Enabled"] = true, -- // Will adjust your camlock smoothness if target is in the air
           ["New Smoothness"] = 0.758, -- // Smoothness value
       }
   },
   ["Hit Sound"] = {
-      ["Enabled"] = true, -- // Sound for when you hit a player
+      ["Enabled"] = false, -- // Sound for when you hit a player
       ["Hit Sound"] = "Neverlose", -- // Minecraft, Bameware, Bubble, Pick, Pop, Rust, Sans, Fart, Big, Vine, Bruh, Skeet, Neverlose, Fatality, Bonk
-      ["Volume"] = 100,
+      ["Volume"] = 0,
   },
   ["Hit Logs"] = {
       ["Enabled"] = false, -- // Logs when you hit a player
