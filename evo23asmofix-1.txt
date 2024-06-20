@@ -37,7 +37,7 @@ getgenv().Evolution = {
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
           ["X"] = 10, -- // Max X Position
-          ["Y"] = 3, -- // Max Y Position
+          ["Y"] = 9, -- // Max Y Position
           ["Z"] = 3, -- // Max Z Position
       },
   },
@@ -213,7 +213,7 @@ getgenv().Evolution = {
           ["Aiming"] = true, -- // Silent Aim, Cam Lock
           ["FOV"] = true, -- // Silent Aim FOV, Cam Lock FOV
           ["Misc"] = true, -- // Macro, Gun Sorting, Fake Spike, Chat Commands
-          ["Emotes"] = true, -- // Emotes
+          ["Emotes"] = false, -- // Emotes
       }
   },
   ["Extra"] = {
