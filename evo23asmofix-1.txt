@@ -38,7 +38,7 @@ getgenv().Evolution = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
           ["X"] = 10, -- // Max X Position
           ["Y"] = 9, -- // Max Y Position
-          ["Z"] = 3, -- // Max Z Position
+          ["Z"] = 5, -- // Max Z Position
       },
   },
   ["Cam Lock"] = {
@@ -136,9 +136,9 @@ getgenv().Evolution = {
   },
   ["FOV"] = { -- // FOV Circle Settings
       ["Silent Aim"] = {
-          ["Visible"] = true, -- // Will toggle if you can see the circle
+          ["Visible"] = false, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-          ["Size"] = 14, -- // Size of the circle
+          ["Size"] = 10, -- // Size of the circle
           ["Thickness"] = 0.2, -- // Thickness of the circle
           ["Transparency"] = 0.3, -- // Transparency of the circle 0.1 - 1
           ["Color"] = Color3.fromRGB(2,23,240) -- // Circle Color
