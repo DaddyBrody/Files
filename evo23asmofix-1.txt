@@ -38,11 +38,11 @@ getgenv().Evolution = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
           ["X"] = 10, -- // Max X Position
           ["Y"] = 9, -- // Max Y Position
-          ["Z"] = 5, -- // Max Z Position
+          ["Z"] = 3, -- // Max Z Position
       },
   },
   ["Cam Lock"] = {
-      ["Enabled"] = true, -- // Adjust your camera position
+      ["Enabled"] = false, -- // Adjust your camera position
       ["Mode"] = "Target_toggle", -- // Select mode to select target (FOV, Target_toggle, Target_hold)
       ["Target Mode Bind"] = "Q", -- // Keybind for Target modes
       ["Easing Style"] = "Exponential", -- // https://create.roblox.com/docs/reference/engine/enums/EasingStyle
@@ -906,7 +906,7 @@ GetPrediction = function()
       local PingValue = Value:split(" ")
       local PingNumber = tonumber(PingValue[1])
       if string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "default" then 
-          return tonumber(PingNumber / 300 * 0.1 + 0.137953)
+          return tonumber(PingNumber / 300 * 0.1 + 0.139425)
       elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "old" then 
           if PingNumber < 130 then
               return tonumber(PingNumber / 1000 + 0.037)
