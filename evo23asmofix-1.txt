@@ -154,7 +154,7 @@ getgenv().Evolution = {
   },
   ["Airshot"] = {
       ["Enabled"] = true, -- // Will adjust your prediction if target is in the air
-      ["Jump Offset"] = -1.2, -- // Jump Offset
+      ["Jump Offset"] = -1, -- // Jump Offset
       ["Cam Lock Smoothness"] = {
           ["Enabled"] = true, -- // Will adjust your camlock smoothness if target is in the air
           ["New Smoothness"] = 0.758, -- // Smoothness value
