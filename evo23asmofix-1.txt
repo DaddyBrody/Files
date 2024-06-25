@@ -26,9 +26,9 @@ getgenv().Evolution = {
       ["Mode"] = "FOV", -- // Select mode to select target (FOV, Target )
       ["Target Mode Bind"] = "L", -- // Keybind for Target mode
       ["Notify"] = false, -- // Sends notifcation when targeting someone
-      ["Prediction"] = 0.174, -- // Prediction Value
+      ["Prediction"] = 0.16755, -- // Prediction Value
       ["Hit Chance"] = 100, -- // Hit chance (1-100)
-      ["Target Part"] = "UpperTorso", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
+      ["Target Part"] = "Head", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
       ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
       ["Nearest Part To Cursor"] = false, -- // Sets target part to the nearest body part to your cursor
       ["Closest Point"] = false, -- // Gets the closest point on the target part (not working rn)
@@ -138,7 +138,7 @@ getgenv().Evolution = {
       ["Silent Aim"] = {
           ["Visible"] = false, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-          ["Size"] = 14, -- // Size of the circle
+          ["Size"] = 20, -- // Size of the circle
           ["Thickness"] = 0.2, -- // Thickness of the circle
           ["Transparency"] = 0.3, -- // Transparency of the circle 0.1 - 1
           ["Color"] = Color3.fromRGB(2,23,240) -- // Circle Color
@@ -906,7 +906,7 @@ GetPrediction = function()
       local PingValue = Value:split(" ")
       local PingNumber = tonumber(PingValue[1])
       if string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "default" then 
-          return tonumber(PingNumber / 300 * 0.1 + 0.139425)
+          return tonumber(PingNumber / 300 * 0.1 + 0.142425)
       elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "old" then 
           if PingNumber < 130 then
               return tonumber(PingNumber / 1000 + 0.037)
