@@ -19,7 +19,7 @@ getgenv().Evolution = {
       ["Auto Join Discord"] = false, -- // Will Join Discord
       ["Allow Notifications"] = true, -- // Toggles all notifications
       ["Notifcation Type"] = "xaxa", -- // Akali, Roblox, xaxa
-      ["Notifcation Duration"] = 3, -- // How long notifcations will show
+      ["Notifcation Duration"] = 2, -- // How long notifcations will show
   },
   ["Silent Aim"] = {
       ["Enabled"] = true, -- // Mouse Redirection
@@ -37,7 +37,7 @@ getgenv().Evolution = {
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
           ["X"] = 15, -- // Max X Position
-          ["Y"] = 9, -- // Max Y Position
+          ["Y"] = 5, -- // Max Y Position
           ["Z"] = 3, -- // Max Z Position
       },
   },
@@ -138,7 +138,7 @@ getgenv().Evolution = {
       ["Silent Aim"] = {
           ["Visible"] = false, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-          ["Size"] = 20, -- // Size of the circle
+          ["Size"] = 14, -- // Size of the circle
           ["Thickness"] = 0.2, -- // Thickness of the circle
           ["Transparency"] = 0.3, -- // Transparency of the circle 0.1 - 1
           ["Color"] = Color3.fromRGB(2,23,240) -- // Circle Color
@@ -906,7 +906,7 @@ GetPrediction = function()
       local PingValue = Value:split(" ")
       local PingNumber = tonumber(PingValue[1])
       if string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "default" then 
-          return tonumber(PingNumber / 300 * 0.112221 + 0.1422211)
+          return tonumber(PingNumber / 300 * 0.126633 + 0.11922)
       elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "old" then 
           if PingNumber < 130 then
               return tonumber(PingNumber / 1000 + 0.037)
