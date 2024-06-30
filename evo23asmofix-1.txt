@@ -38,7 +38,7 @@ getgenv().Evolution = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
           ["X"] = 5, -- // Max X Position
           ["Y"] = 10, -- // Max Y Position
-          ["Z"] = 3, -- // Max Z Position
+          ["Z"] = 10, -- // Max Z Position
       },
   },
   ["Cam Lock"] = {
