@@ -42,7 +42,7 @@ getgenv().Evolution = {
       },
   },
   ["Cam Lock"] = {
-      ["Enabled"] = false, -- // Adjust your camera position
+      ["Enabled"] = true, -- // Adjust your camera position
       ["Mode"] = "Target_toggle", -- // Select mode to select target (FOV, Target_toggle, Target_hold)
       ["Target Mode Bind"] = "Q", -- // Keybind for Target modes
       ["Easing Style"] = "Exponential", -- // https://create.roblox.com/docs/reference/engine/enums/EasingStyle
@@ -138,7 +138,7 @@ getgenv().Evolution = {
       ["Silent Aim"] = {
           ["Visible"] = false, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-          ["Size"] = 14, -- // Size of the circle
+          ["Size"] = 15, -- // Size of the circle
           ["Thickness"] = 0.2, -- // Thickness of the circle
           ["Transparency"] = 0.3, -- // Transparency of the circle 0.1 - 1
           ["Color"] = Color3.fromRGB(2,23,240) -- // Circle Color
