@@ -38,7 +38,7 @@ getgenv().Evolution = {
           ["Enabled"] = true, -- // Will Randomly Offset hit point
           ["X"] = 5, -- // Max X Position
           ["Y"] = 10, -- // Max Y Position
-          ["Z"] = 10, -- // Max Z Position
+          ["Z"] = 5, -- // Max Z Position
       },
   },
   ["Cam Lock"] = {
@@ -136,9 +136,9 @@ getgenv().Evolution = {
   },
   ["FOV"] = { -- // FOV Circle Settings
       ["Silent Aim"] = {
-          ["Visible"] = false, -- // Will toggle if you can see the circle
+          ["Visible"] = true, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-          ["Size"] = 12, -- // Size of the circle
+          ["Size"] = 15, -- // Size of the circle
           ["Thickness"] = 0.2, -- // Thickness of the circle
           ["Transparency"] = 0.3, -- // Transparency of the circle 0.1 - 1
           ["Color"] = Color3.fromRGB(2,23,240) -- // Circle Color
@@ -906,7 +906,7 @@ GetPrediction = function()
       local PingValue = Value:split(" ")
       local PingNumber = tonumber(PingValue[1])
       if string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "default" then 
-          return tonumber(PingNumber / 300 * 0.124 + 0.1222932)
+          return tonumber(PingNumber / 300 * 0.12111 + 0.12139)
       elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "old" then 
           if PingNumber < 130 then
               return tonumber(PingNumber / 1000 + 0.037)
