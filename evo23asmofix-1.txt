@@ -136,7 +136,7 @@ getgenv().Evolution = {
   },
   ["FOV"] = { -- // FOV Circle Settings
       ["Silent Aim"] = {
-          ["Visible"] = true, -- // Will toggle if you can see the circle
+          ["Visible"] = false, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
           ["Size"] = 15, -- // Size of the circle
           ["Thickness"] = 0.2, -- // Thickness of the circle
@@ -906,7 +906,7 @@ GetPrediction = function()
       local PingValue = Value:split(" ")
       local PingNumber = tonumber(PingValue[1])
       if string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "default" then 
-          return tonumber(PingNumber / 300 * 0.12111 + 0.12139)
+          return tonumber(PingNumber / 300 * 0.12911 + 0.12139)
       elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "old" then 
           if PingNumber < 130 then
               return tonumber(PingNumber / 1000 + 0.037)
