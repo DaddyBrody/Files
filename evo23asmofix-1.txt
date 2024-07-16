@@ -169,7 +169,7 @@ getgenv().Evolution = {
       ["Enabled"] = false, -- // Logs when you hit a player
   },
   ["Macro"] = {
-      ["Enabled"] = false, -- // Lua based macro
+      ["Enabled"] = true, -- // Lua based macro
       ["Bind"] = "X", -- // Keybind to start macro
       ["Abuse"] = true, -- // Will use scroll wheel to macro
       ["Speed"] = 1, --// Macro Speed
