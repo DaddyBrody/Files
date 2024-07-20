@@ -6,9 +6,9 @@ getgenv().Evolution = {
           ["Key"] = "", -- // Enter your Evolution Key
       },
       ["Internal"] = {
-          ["Enabled"] = false, -- // Shows internal ui for evolution
+          ["Enabled"] = true, -- // Shows internal ui for evolution
           ["Auto Show"] = false, -- // Will show the ui when you execute
-          ["Bind"] = "V", -- // Default keybind to toggle ui
+          ["Bind"] = "N", -- // Default keybind to toggle ui
       },
       ["FPS Unlocker"] = { -- // Unlocks your fps (BROKEN ON ELECTRON)
           ["Enabled"] = true, -- // Will unlock your FPS
@@ -170,7 +170,7 @@ getgenv().Evolution = {
   },
   ["Macro"] = {
       ["Enabled"] = true, -- // Lua based macro
-      ["Bind"] = "X", -- // Keybind to start macro
+      ["Bind"] = "C", -- // Keybind to start macro
       ["Abuse"] = true, -- // Will use scroll wheel to macro
       ["Speed"] = 1, --// Macro Speed
   },
@@ -195,7 +195,7 @@ getgenv().Evolution = {
   },
   ["Emotes"] = { -- // Da hood and Hood Modded only (if you have the animation ids for other da hood ripoffs dm xz)
       ["Lay"] = false, ["LayKey"] = Enum.KeyCode.T, -- // Will Play Lay Animation when you press the keybind
-      ["Greet"] = false, ["GreetKey"] = Enum.KeyCode.G, -- // Will Play Greet Animation when you press the keybind
+      ["Greet"] = true, ["GreetKey"] = Enum.KeyCode.B, -- // Will Play Greet Animation when you press the keybind
       ["Speed"] = false, ["SpeedKey"] = Enum.KeyCode.N, -- // Will Play Speed Animation when you press the keybind
       ["Sturdy"] = false, ["SturdyKey"] = Enum.KeyCode.H, -- // Will Play Sturdy Animation when you press the keybind
       ["Griddy"] = false, ["GriddyKey"] = Enum.KeyCode.G, -- // Will Play Griddy Animation when you press the keybind
@@ -906,7 +906,7 @@ GetPrediction = function()
       local PingValue = Value:split(" ")
       local PingNumber = tonumber(PingValue[1])
       if string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "default" then 
-          return tonumber(PingNumber / 300 * 0.12511 + 0.115839)
+          return tonumber(PingNumber / 300 * 0.12511 + 0.1195839)
       elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "old" then 
           if PingNumber < 130 then
               return tonumber(PingNumber / 1000 + 0.037)
