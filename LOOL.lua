@@ -119,8 +119,8 @@ getgenv().Evolution = {
               ]]
           }
       },
-      ["Visible Check"] = true, -- // Will check if target is behind a wall
-      ["K.O Check"] = true, -- // Will check if target is knocked or grabbed
+      ["Visible Check"] = false, -- // Will check if target is behind a wall
+      ["K.O Check"] = false, -- // Will check if target is knocked or grabbed
       ["Crew Check"] = false, -- // Will check if target is in your crew
       ["Friend Check"] = false, -- // Will check if target is your friend if not will not lock
       ["Distance"] = { -- // Not lock onto people if they are too far away
