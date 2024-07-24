@@ -138,10 +138,10 @@ getgenv().Evolution = {
       ["Silent Aim"] = {
           ["Visible"] = true, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-          ["Size"] = 20, -- // Size of the circle
+          ["Size"] = 30, -- // Size of the circle
           ["Thickness"] = 0.2, -- // Thickness of the circle
-          ["Transparency"] = 0.3, -- // Transparency of the circle 0.1 - 1
-          ["Color"] = Color3.fromRGB(2,23,240) -- // Circle Color
+          ["Transparency"] = 0.5, -- // Transparency of the circle 0.1 - 1
+          ["Color"] = Color3.fromRGB(1,2,240) -- // Circle Color
       },
       ["Cam Lock"] = {
           ["Visible"] = false, -- // Will toggle if you can see the circle
