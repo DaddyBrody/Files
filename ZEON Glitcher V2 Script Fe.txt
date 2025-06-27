@@ -1,28 +1,3 @@
-﻿
-
-
---Zeon Glitcher V2--
---made by TrixLua#8210--
---this is a Public Glitcher--
---THE MOON FAILED. NOW U MEET THE SUCCESSOR. ZEON...--
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 local ZEONUI = Instance.new("ScreenGui")
 local Main = Instance.new("ImageLabel")
 local TagsAndShit = Instance.new("ImageLabel")
