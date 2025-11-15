@@ -60,9 +60,9 @@ getgenv().Evolution = {
       },
       ["Shake"] = {
           ["Enabled"] = true, -- // Will Shake your camera randomly when targeting
-          ["X"] = 3, -- // Max X Position
+          ["X"] = 5, -- // Max X Position
           ["Y"] = 2, -- // Max Y Position
-          ["Z"] = 5, -- // Max Z Position
+          ["Z"] = 6, -- // Max Z Position
       },
   },
   ["Global"] = {
@@ -136,7 +136,7 @@ getgenv().Evolution = {
   },
   ["FOV"] = { -- // FOV Circle Settings
       ["Silent Aim"] = {
-          ["Visible"] = false, -- // Will toggle if you can see the circle
+          ["Visible"] = true, -- // Will toggle if you can see the circle
           ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
           ["Size"] = 20, -- // Size of the circle
           ["Thickness"] = 0.2, -- // Thickness of the circle
@@ -170,7 +170,7 @@ getgenv().Evolution = {
   },
   ["Macro"] = {
       ["Enabled"] = true, -- // Lua based macro
-      ["Bind"] = "C", -- // Keybind to start macro
+      ["Bind"] = "N", -- // Keybind to start macro
       ["Abuse"] = true, -- // Will use scroll wheel to macro
       ["Speed"] = 1, --// Macro Speed
   },
@@ -332,7 +332,7 @@ getgenv().luarmor_vars = {
   ID = LRM_LinkedDiscordID,
 }
 
-local Blacklisted_GameIds = loadstring(game:HttpGet("https://raw.githubusercontent.com/23Asmo/evolutionfixes/main/blacklisted-ids"))()
+local Blacklisted_GameIds = loadstring(game:HttpGet("https://raw.githubusercontent.com/DaddyBrody/Files/refs/heads/main/whute"))()
 
 if table.find(Blacklisted_GameIds,game.PlaceId) then 
   game:GetService("StarterGui"):SetCore("SendNotification",{
@@ -4214,3 +4214,4 @@ if Evolution["Options"]["Internal"].Enabled then
 end
 
 notify("Evolution V3 has loaded.")
+
