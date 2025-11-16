@@ -906,7 +906,7 @@ GetPrediction = function()
       local PingValue = Value:split(" ")
       local PingNumber = tonumber(PingValue[1])
       if string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "default" then 
-          return tonumber(PingNumber / 300 * 0.12511 + 0.1195839)
+          return tonumber(PingNumber / 300 * 0.12511 + 0.12566384952)
       elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "old" then 
           if PingNumber < 130 then
               return tonumber(PingNumber / 1000 + 0.037)
@@ -4214,4 +4214,5 @@ if Evolution["Options"]["Internal"].Enabled then
 end
 
 notify("Evolution V3 has loaded.")
+
 
